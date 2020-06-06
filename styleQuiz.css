@@ -1,0 +1,92 @@
+/*page basics style*/
+:root{
+    background-color: green;
+    /*default browser size 16px*/
+    /*multiply by % for font px amount*/
+    font-size: 75%;
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: indianred;
+}
+/*page info setup*/
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+/* "*" will adjust anything inside called property*/
+.container > * {
+    width: 100%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.hidden{
+    display: none;
+}
+/*info basic styling*/
+h1 h2 h3 h4{
+    margin-bottom: 1rem;
+}
+h1{
+    font-size: 4rem;
+    color: lavenderblush;
+    margin-bottom: 5rem;
+}
+h1:hover{
+    text-decoration: underline;
+    color: orangered;
+    font-weight: 900;
+}
+h1 > span{
+    font-size: medium;
+}
+.btn{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgb(21, 207, 77);
+    margin-bottom: 10px;
+    background-color: chartreuse;
+    color: orangered;
+    padding: 5px;
+    width: 175px;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 3px 5px rgb(255, 69, 0, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 200ms;
+}
+.btn[disabled] :hover {}
+
+h2{
+    font-size: large;
+    margin-bottom: 4rem;
+}
+h3{
+    font-size: medium;
+    margin-bottom: 4rem;
+}
+h4{
+    font-size: small;
+    margin-bottom: 4rem;
+}
