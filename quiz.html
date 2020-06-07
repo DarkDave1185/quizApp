@@ -10,22 +10,40 @@
 <body>
     <div class="container">
         <div id="quiz" class="flex-column justify-center">
+            <div id="display">
+                <div id="display-item">
+                    <p class="display-prefix">
+                        questionNumber
+                    </p>
+                    <h2 class="display-main-text" id="questionCounter">
+                        
+                    </h2>
+                </div>
+                <div id="display-item">
+                    <p class="display-prefix">
+                        appScore
+                    </p>
+                    <h2 class="display-main-text" id="score">
+                        0
+                    </h2>
+                </div>
+            </div>
             <h3 id="question">...placement for question...</h3>
             <div class="choice-container">
                 <p class="choice-prefix">A</p>
-                <p class="choice-text">answerA</p>
+                <p class="choice-text" data-number="1">answerA</p>
             </div>
             <div class="choice-container">
                 <p class="choice-prefix">B</p>
-                <p class="choice-text">answerB</p>
+                <p class="choice-text" data-number="2">answerB</p>
             </div>
             <div class="choice-container">
                 <p class="choice-prefix">C</p>
-                <p class="choice-text">answerC</p>
+                <p class="choice-text" data-number="3">answerC</p>
             </div>
             <div class="choice-container">
                 <p class="choice-prefix">D</p>
-                <p class="choice-text">answerD</p>
+                <p class="choice-text" data-number="4">answerD</p>
             </div>
         </div>
     </div>
