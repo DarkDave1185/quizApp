@@ -45,7 +45,7 @@ startApp=()=> {
 getQuestions=()=>{
     if(questionOptions.length==0 || questionCounter>=maxQuestions){
         /*goes to finished page*/
-        return window.location.assign("/done.html");
+        return window.location.assign("highScores.html");
     }
     questionCounter++;
     /*question number on display*/

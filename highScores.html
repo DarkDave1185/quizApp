@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIndex.css">
+    <title>highScores</title>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h2 id="finalsScore">0</h2>
+            <form>
+                <input type="text" name="username" id="username" placeholder="userName"/>
+                <button type="submit" class="btn" id="SaveScore" onclick="saveHighScore(e)">saveScore</button>
+            </form>
+            <a class="btn" href="index.html">homePage</a>
+            <a class="btn" href="quiz.html">onceMore</a>
+        </div>
+    </div>
+    <script src="highScores.js"></script>
+</body>
+</html>
