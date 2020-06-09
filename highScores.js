@@ -1,11 +1,14 @@
 const username=document.getElementById("username");
 const saveScore=document.getElementById("saveScore");
 const finalScore=document.getElementById("finalScore");
+//score display
+const scorezList=document.getElementById("scorezList");
+//storage
 const recentScore=localStorage.getItem("recentScore");
 
 const highScore=JSON.parse(localStorage.getItem("highScore")) || [];
 
-const maxHighScore=3
+const maxHighScore=3;
 console.log(highScore);
 finalScore.innerText=recentScore;
 
@@ -18,10 +21,10 @@ function saveHighScore(e) {
     console.log("clicked the save button");
     e.preventDefault();
 
-    console.log("name:", username.value)
+    console.log("name:", username.value);
 
     const score={
-        score: Math.floor(Math.random()*100),
+        score: recentScore,
         name: username.value
     };
 
@@ -33,4 +36,15 @@ function saveHighScore(e) {
     //Location.assign("/");
 }
 
-saveScore.addEventListener("click", saveHighScore)
+saveScore.addEventListener("click", saveHighScore);
+
+//score dispaly js
+const listItem = document.createElement("li");
+
+scorezList.innerHTML=highScore
+.forEach(scoreObj => {
+   
+    listItem.innerText = "${scoreObj.name} - ${scoreObj.score}";
+    listItem.classList.add("high-score");
+    scorezList.appendChild(listItem);
+   })
