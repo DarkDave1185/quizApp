@@ -7,7 +7,6 @@ const scoreDiff=document.getElementById("score")
 /*console.log("question")*/
 let shownQuestion={};
 let correctAnswer=true;
-let scoreCount=0;
 let questionCounter=0;
 let questionOptions=[];
 
@@ -90,8 +89,11 @@ choices.forEach(choices=>{
 });
 /*increase score count*/
 increaseScore= num =>{
-    score+= num;
-    scoreDiff.innerText=score;
+    console.log("num:", num)
+    console.log(scoreCount)
+    scoreCount = scoreCount + num;
+    console.log("scoreCount: ", scoreCount)
+    scoreDiff.innerText=scoreCount;
 };
 /*able to get random questions if page refreshed*/
 startApp();
