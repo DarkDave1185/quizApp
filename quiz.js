@@ -25,8 +25,72 @@ let questions=[
         choice2:"answer",
         choice3:"answer",
         choice4:"answer",
-        answer:4
+        answer:1
     },
+    {/*question setup*/ 
+        question: "placement for question 2",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+    {/*question setup*/ 
+        question: "placement for question 3",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+    {/*question setup*/ 
+        question: "placement for question 4",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+    {/*question setup*/ 
+        question: "placement for question 5",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },{/*question setup*/ 
+        question: "placement for question 6",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+    {/*question setup*/ 
+        question: "placement for question 7",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+    {/*question setup*/ 
+        question: "placement for question 8",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+    {/*question setup*/ 
+        question: "placement for question 9",
+        choice1:"answer",
+        choice2:"answer",
+        choice3:"answer",
+        choice4:"answer",
+        answer:1
+    },
+
 ]
 
 const correctPoints=10

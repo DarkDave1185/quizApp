@@ -4,9 +4,10 @@ const finalScore=document.getElementById("finalScore");
 //score display
 const scorezList=document.getElementById("scorezList");
 //storage
-const recentScore=localStorage.getItem("recentScore");
+const recentScore=localStorage.getItem("recentScore", finalScore);
 
 const highScore=JSON.parse(localStorage.getItem("highScore")) || [];
+    localStorage.setItem("highScore", JSON.stringify(highScore));
 
 const maxHighScore=3;
 console.log(highScore);
@@ -34,7 +35,7 @@ function saveHighScore(e) {
 
     localStorage.setItem("highScore", JSON.stringify(highScore));
     //Location.assign("/");
-}
+};
 
 saveScore.addEventListener("click", saveHighScore);
 
@@ -42,9 +43,8 @@ saveScore.addEventListener("click", saveHighScore);
 const listItem = document.createElement("li");
 
 scorezList.innerHTML=highScore
-.forEach(scoreObj => {
-   
-    listItem.innerText = "${scoreObj.name} - ${scoreObj.score}";
-    listItem.classList.add("high-score");
-    scorezList.appendChild(listItem);
-   })
+    .forEach(scoreObj => {
+        listItem.innerText = "${scoreObj.name} - ${scoreObj.score}";
+        listItem.classList.add("high-score");
+        scorezList.appendChild(listItem);
+});
