@@ -1,0 +1,61 @@
+1 JavaScript is ______ language.
+*a. Scripting
+b. Programming
+c. Both a and b
+d. Application
+
+
+2  Inside which HTML element do we put the JavaScript?
+A.  <js>
+B.   <scripting>
+*C.  <script>
+D.  <javascript>
+
+3  Which types of image maps can be used with JavaScript?
+A.  Server-side image maps
+*B.  Client-side image maps
+C.  Server-side image maps and Client-side image maps
+D.  None of the above
+
+4  Which of the following is not considered a JavaScript operator?
+A.  new
+*B.  this
+C.  delete
+D.  typeof
+
+5  JavaScript is interpreted by ______.
+*A.  Client
+B.   Server
+C.  Object
+D.  None of the above
+
+6  Using _______ statement is how you test for a specific condition.
+A.  Select
+*B.  If
+C.  Switch
+D.  For
+
+7  The _______ method of an Array object adds and/or removes elements from an array.
+A.  Reverse
+B.   Shift
+C.  Slice
+*D.  Splice
+
+8  In JavaScript, _________ is an object of the target language data type that encloses an object of the source language.
+*A.  a wrapper
+B.   a link
+C.  a cursor
+D.  a form 
+
+9  _________ is a wrapped Java array, accessed from within JavaScript code.
+*A.  JavaArray
+B.   JavaClass
+C.  JavaObject
+D.  JavaPackage
+
+0 The HTML5 specification includes
+a. Data storage
+b. Graphics APIs
+c. Other APIs for web apps
+*d. All of the mentioned
+  
